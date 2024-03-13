@@ -1,5 +1,6 @@
 ﻿using API.Common;
 using Application.Features.Products.Commands.CreateProduct;
+using Application.Features.Products.Commands.UpdateProduct;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,6 +21,17 @@ namespace API.Controllers
             var result = await _mediator.Send(createProductCommand);
 
             return Created("", new DefaultResponse { Success = true, Message = "New product successfully created" });
+        }
+
+        [HttpPut("{id}", Name = "UpdateProduct")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        public async Task<ActionResult> CreateProduct(int id, [FromBody] UpdateProductCommand updateProductCommand)
+        {
+            updateProductCommand.Id = id;
+
+            await _mediator.Send(updateProductCommand);
+
+            return Ok(new DefaultResponse { Success = true, Message = "Product successfully updated" });
         }
     }
 }
