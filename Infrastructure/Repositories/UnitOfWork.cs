@@ -28,7 +28,9 @@ namespace Infrastructure.Repositories
                 _repositories = new Hashtable();
             }
 
-            var type = nameof(TEntity);
+            var type = typeof(TEntity).Name;
+
+            Console.WriteLine(type);
 
             if (!_repositories.ContainsKey(type))
             {
