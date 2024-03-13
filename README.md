@@ -2,7 +2,7 @@
 
 ## Descripción:
 
-El proyecto lo estoy construyendo con el fin de practicar __Domain Driven Design(DDD)__, __Clean Arquitecture__, __Mediator Pattern__, __CQRS Pattern__, etc. y su aplicación en un proyecto api de __ASP.NET Core__.
+El proyecto lo estoy construyendo con el fin de practicar __Domain Driven Design(DDD)__, __Clean Architecture__, __Mediator Pattern__, __CQRS Pattern__, etc. y su aplicación en un proyecto api de __ASP.NET Core__.
 
 ## Funciones a incluir:
 
@@ -35,4 +35,4 @@ El proyecto lo estoy construyendo con el fin de practicar __Domain Driven Design
     "DefaultConnection": "Data Source=localhost;Initial Catalog=GroceryStoreDb;User Id=sa;password=@MyStrongPassword92;TrustServerCertificate=True;"
   }```
 * Click derecho en el proyecto API y seleccionar la opción de "establecer como proyecto de inicio"(set as startup project)
-* Ahora solo tiene que hacer click en el botón de ejecutar para correr el servidor y se le abrirá una ventana de swagger en el navegador, en la cual podra ver los endpoints disponibles.
+* Ahora solo tiene que hacer click en el botón de ejecutar para correr el servidor y se le abrirá una ventana de swagger en el navegador, en la cual podra ver los endpoints disponibles y hacer peticiones a los mismos.
