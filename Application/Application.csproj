@@ -22,7 +22,6 @@
   <ItemGroup>
     <Folder Include="Features\Customers\Commands\" />
     <Folder Include="Features\Customers\Queries\" />
-    <Folder Include="Features\Products\Commands\" />
     <Folder Include="Features\Products\Queries\" />
     <Folder Include="Features\Sales\Commands\" />
     <Folder Include="Features\Sales\Queries\" />
